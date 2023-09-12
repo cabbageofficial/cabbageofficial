@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .naves.active {
+        @apply after:w-[5px] text-black
+    }
+}
