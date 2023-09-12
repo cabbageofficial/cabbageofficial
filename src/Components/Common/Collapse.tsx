@@ -12,7 +12,7 @@ interface ButtonProps {
     open: boolean;
 }
 interface ContainerProps {
-    children: ReactNode
+    children: ReactNode;
 }
 
 export const CollapseContainer = ({ children }: ContainerProps) => {

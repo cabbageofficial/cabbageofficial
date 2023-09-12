@@ -51,7 +51,7 @@ const Right = () => {
         <div>
             {faqData.slice(0, 6).map((item, i) => (
                 <CollapseContainer key={i}>
-                    <CollapseButton onClick={() => onOpenHandler(i)}>
+                    <CollapseButton onClick={() => onOpenHandler(i)} open={open === i}>
                         {item.title}
                     </CollapseButton>
                     <Collapse
