@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-//Component
-import Container from "../Common/Container";
-
 //Data
 const data = [
     {
@@ -54,6 +51,11 @@ const Card = () => {
                         </Link>
                     </div>
                 ))}
+            </div>
+            <div className="text-center mt-10">
+                <Link href="https://github.com/orgs/cabbgeweb/repositories" target="_blank" className="border border-solid border-secondary rounded py-1.5 px-3 bg-secondary transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] text-white font-medium hover:border-main hover:text-main hover:bg-transparent">
+                    Explore More
+                </Link>
             </div>
         </div>
     );

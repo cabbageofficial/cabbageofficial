@@ -8,7 +8,7 @@ const Content = () => {
                 <Image src="/cababgetube.png" alt="Cabbage Tube" width={2870} height={1406} className="w-[200px] -ml-5" />
                 <h4 className="text-xl font-bold mb-2">Cabbage <span className="text-secondary">Youtube Channel</span></h4>
                 <p className="opacity-90 mb-6">Welcome to Cabbage Tube, your go-to destination for captivating and informative video tutorials. We believe that learning should be engaging and accessible, which is why our channel is dedicated to providing you with high-quality tutorials that cover a wide range of topics.</p>
-                <Link href="https://www.youtube.com/@cabbageweb198" className="bg-secondary py-2 px-3 rounded-md text-white uppercase text-xs font-semibold transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:bg-main" target="_blank">
+                <Link href="https://www.youtube.com/@cabbagetube24" className="bg-secondary py-2 px-3 rounded-md text-white uppercase text-xs font-semibold transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:bg-main" target="_blank">
                     Visit Channel
                 </Link>
             </div>
