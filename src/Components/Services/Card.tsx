@@ -5,19 +5,19 @@ const data = [
     {
         name1: "Web App",
         name2: "Development",
-        description: "We specialize in creating custom web applications tailored to your unique needs and requirements. Our expert team",
+        description: "We specialize in creating custom web applications tailored to your unique needs and requirements.",
         icon: "/services/service-icon1.png"
     },
     {
         name1: "Backend",
         name2: "Development",
-        description: "Our backend development services cover everything from database design to server-side logic. We build scalable and",
+        description: "Our backend development services cover everything from database design to server-side logic.",
         icon: "/services/service-icon2.png"
     },
     {
         name1: "Deployment",
         name2: "Services",
-        description: "We take care of deploying your web applications to production environments securely and efficiently. From",
+        description: "We take care of deploying your web applications to production environments securely and efficiently.",
         icon: "/services/service-icon3.png"
     }
 ];

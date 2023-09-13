@@ -3,13 +3,13 @@ import Icons from "../Common/Icons";
 
 //Data
 const data = [
-    { icon: "teenyicons:nodejs-solid", name: "Nodejs", progress: "50%", color: "group-hover:text-[#026e00ff]" },
-    { icon: "akar-icons:nextjs-fill", name: "Nextjs", progress: "60%", color: "group-hover:text-[#000000ff]" },
-    { icon: "file-icons:nestjs", name: "Nestjs", progress: "70%", color: "group-hover:text-[#ea2845ff]" },
-    { icon: "simple-icons:typescript", name: "Typescript", progress: "55%", color: "group-hover:text-[#3178c6ff]" },
-    { icon: "bxl:tailwind-css", name: "Tailwind", progress: "80%", color: "group-hover:text-[#38bdf8ff]" },
-    { icon: "simple-icons:python", name: "Python", progress: "40%", color: "group-hover:text-[#366c9cff]" },
-    { icon: "la:aws", name: "AWS", progress: "90%", color: "group-hover:text-[#ff9900ff]" },
+    { icon: "teenyicons:nodejs-solid", name: "Nodejs", progress: "90%", color: "group-hover:text-[#026e00ff]" },
+    { icon: "akar-icons:nextjs-fill", name: "Nextjs", progress: "98%", color: "group-hover:text-[#000000ff]" },
+    { icon: "file-icons:nestjs", name: "Nestjs", progress: "98%", color: "group-hover:text-[#ea2845ff]" },
+    { icon: "simple-icons:typescript", name: "Typescript", progress: "95%", color: "group-hover:text-[#3178c6ff]" },
+    { icon: "bxl:tailwind-css", name: "Tailwind", progress: "100%", color: "group-hover:text-[#38bdf8ff]" },
+    { icon: "simple-icons:python", name: "Python", progress: "30%", color: "group-hover:text-[#366c9cff]" },
+    { icon: "la:aws", name: "AWS", progress: "87%", color: "group-hover:text-[#ff9900ff]" },
 ]
 
 const Skill = () => {

@@ -8,28 +8,28 @@ import { Collapse, CollapseButton, CollapseContainer } from "../Common/Collapse"
 //Data
 const faqData = [
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title: "What sets your web development services apart from others?",
+        content: "Our web development services stand out due to our expertise in cutting-edge technologies, dedication to user-centric design, and a track record of delivering innovative solutions that drive results."
     },
     {
-        title: "How can I contact customer support?",
-        content: "You can reach our customer support team by phone at 1-800-123-4567 or by email at support@example.com. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date."
+        title: "Can you provide examples of projects you've worked on?",
+        content: "Certainly! Visit our portfolio section to explore a selection of projects that showcase our diverse range of web development and design work."
     },
     {
-        title: "Is there a return policy?",
-        content: "Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date."
+        title: "How do you determine the right technology stack for a project?",
+        content: "We carefully assess project requirements, scalability, and performance needs to choose the most suitable technologies from our toolkit, which includes TypeScript, JavaScript, Node.js, React.js, Next.js, Nest.js, Express.js, and GraphQL."
     },
     {
-        title: "What payment methods do you accept?",
-        content: "We accept credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers as payment methods. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date."
+        title: "What is the typical timeline for a web development project?",
+        content: "Project timelines can vary, but we provide estimated timelines during the project planning phase. Factors such as project complexity, features, and client feedback influence the schedule."
     },
     {
-        title: "Do you offer international shipping?",
-        content: "Yes, we offer international shipping to most countries. Shipping fees may apply depending on your location. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date."
+        title: "How do you ensure the security of web applications you develop?",
+        content: "Security is a top priority. We follow industry best practices, perform security audits, and regularly update software to protect your web applications from potential threats."
     },
     {
-        title: "How do I reset my password?",
-        content: "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions sent to your email. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date. Yes, we have a 30-day return policy. You can return your purchase for a full refund within 30 days of the purchase date."
+        title: "Can you help with website maintenance and updates after the project is completed?",
+        content: "Absolutely! We offer ongoing support, maintenance, and updates to keep your web application running smoothly and up to date."
     }
 ];
 

@@ -2,16 +2,17 @@ import Marquee from "react-fast-marquee"
 
 //Data
 const data = [
-    "Website Design",
-    "Front-end Development",
-    "Back-end Development",
-    "E-commerce Solutions",
-    "Mobile App Development",
-    "UI/UX Design",
-    "Digital Marketing",
-    "Content Creation",
-    "SEO Optimization",
-    "Graphic Design",
+    "Crafting Stunning Web Experiences",
+    "Mastering Typescript Magic",
+    "JavaScript Sorcery in Action",
+    "Node.js Wizardry",
+    "React.js Artistry",
+    "Next.js Innovation",
+    "Nest.js Craftsmanship",
+    "Express.js Expertise",
+    "Unlocking GraphQL Potential",
+    "Designing Engaging User Experiences",
+    "                  "
 ];
 
 
@@ -20,6 +21,7 @@ const Marquees = () => {
         <div className="bg-main py-6 text-white">
             <Marquee
                 pauseOnHover
+                autoFill
             >
                 <div className="flex gap-10">
                     {data.map((item, i) => (

@@ -21,7 +21,7 @@ const About = () => {
                     <div>
                         <h4 className="text-4xl font-bold mb-2">About <span className="text-secondary">Us</span></h4>
                         <p className="text-base">
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            In the ever-evolving digital realm, where pixels paint the canvas of possibility, we sculpt immersive web experiences that captivate, innovate, and resonate.
                         </p>
                         <ul className="mt-4">
                             {data.map((item, i) => (
@@ -41,7 +41,7 @@ const About = () => {
                             <p className="text-base">A agency for developed and Sharing</p>
                             <Socials />
                         </div>
-                        <p className="bg-secondary bg-opacity-20 p-4 rounded-md border border-solid border-secondary border-opacity-30 w-[65%] mx-auto">“It is a long established fact that a reader will be distracted by the readable content of”</p>
+                        <p className="bg-secondary bg-opacity-20 p-4 rounded-md border border-solid border-secondary border-opacity-30 w-[65%] mx-auto">“The harmony of code and design, the symphony of technology and creativity”</p>
                     </div>
                 </div>
             </Container>
