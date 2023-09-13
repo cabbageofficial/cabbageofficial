@@ -29,12 +29,14 @@ const Floating = () => {
     }, []);
 
     return (
-        <Container className={`grid grid-cols-12 items-center fixed top-0 left-0 right-0 bg-[#ffffffdb] z-50 shadow-3xl before:w-full before:h-full before:absolute before:backdrop-saturate-[180%] before:backdrop-blur-[5px] before:top-0 before:-z-10 transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] ${isScrolled ? "translate-y-0" : "-translate-y-[100%]"}`}>
-            <Logo />
-            <Mail />
-            <Navs />
-            <Contact />
-        </Container>
+        <div className={`fixed top-0 left-0 right-0 w-full bg-[#ffffffdb] z-50 shadow-3xl before:w-full before:h-full before:absolute before:backdrop-saturate-[180%] before:backdrop-blur-[5px] before:top-0 before:-z-10 transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] ${isScrolled ? "translate-y-0" : "-translate-y-[100%]"}`}>
+            <Container className="grid grid-cols-12 items-center">
+                <Logo />
+                <Mail />
+                <Navs />
+                <Contact />
+            </Container>
+        </div>
     );
 };
 
