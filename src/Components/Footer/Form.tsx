@@ -60,9 +60,9 @@ const Form = () => {
     }
 
     return (
-        <div className="col-span-8">
+        <div className="col-span-8 md:col-span-8 xxs:col-span-1">
             <h4 className="text-xl font-bold">Say <span className="text-secondary">Something</span></h4>
-            <form className="grid grid-cols-2 gap-4 mt-10" onSubmit={handleSubmit(onSubmit)}>
+            <form className="grid grid-cols-2 gap-4 mt-10 md:mt-10 xxs:mt-5" onSubmit={handleSubmit(onSubmit)}>
                 <div className="relative">
                     <input
                         className="w-full border border-solid border-transparent focus:outline-none transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] focus:border-secondary py-1.5 px-4 rounded-md bg-neutral-100 placeholder:text-main block"

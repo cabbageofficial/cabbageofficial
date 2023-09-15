@@ -6,9 +6,10 @@ import Icons from "../Common/Icons";
 //Data
 const data = [
     { icon: "ri:github-fill", url: "https://github.com/cabbgeweb" },
+    { icon: "simple-icons:npm", url: "https://github.com/cabbgeweb" },
     { icon: "ri:linkedin-fill", url: "https://www.linkedin.com/in/cabbageweb/" },
     { icon: "basil:facebook-solid", url: "https://www.facebook.com/cabbageweb/" },
-    { icon: "mdi:whatsapp", url: "https://wa.me/message/UAXIYNES562EN1" },
+    { icon: "mdi:whatsapp", url: "https://wa.me/message/UAXIYNES562EN1" }
 ]
 
 const Socials = () => {

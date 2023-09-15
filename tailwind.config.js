@@ -17,7 +17,6 @@ module.exports = {
         xl: "1140px",
         "2xl": "1320px",
         "3xl": "1536px",
-        "4xl": "1920px"
       },
       colors: {
         main: "#383838",

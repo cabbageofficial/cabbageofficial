@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Content = () => {
     return (
-        <div className="grid grid-cols-2 gap-12 mt-16">
+        <div className="grid grid-cols-2 lg:grid-cols-2 xxs:grid-cols-1 gap-12 lg:gap-12 xxs:gap-0 xxs:max-lg:gap-y-16 mt-16">
             <div className="">
                 <Image src="/cababgetube.png" alt="Cabbage Tube" width={2870} height={1406} className="w-[200px] -ml-5" />
                 <h4 className="text-xl font-bold mb-2">Cabbage <span className="text-secondary">Youtube Channel</span></h4>

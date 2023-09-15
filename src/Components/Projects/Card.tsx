@@ -44,27 +44,27 @@ const data = [
         height: 1140
     },
     {
-        image: "/projects/project-12.jpg",
-        name: "Creative & digital web design studio.",
-        type: "Magazine, Photography",
-        url: "/",
-        width: 770,
-        height: 570
+        image: "/projects/project-final-6.png",
+        name: "Creative & professional school portfolio.",
+        type: "Portfolio, E-campus",
+        url: "https://ecampus.cabbageweb.com/",
+        width: 1540,
+        height: 1140
     }
 ]
 
 const Card = () => {
     return (
         <div className="mt-16">
-            <div className="w-[80%] mx-auto grid grid-cols-2 gap-x-16 gap-y-16 items-end">
+            <div className="w-[80%] lg:w-[80%] xxs:w-full mx-auto grid grid-cols-2 sm:grid-cols-2 xxs:grid-cols-1 gap-x-16 gap-y-16 md:gap-y-16 lsm:gap-y-8 md:gap-x-16 lsm:gap-x-8 msm:gap-x-8 msm:gap-y-8 sm:gap-y-6 sm:gap-x-6 xxs:gap-x-0 xxs:gap-y-8 items-end">
                 {data.map((item, i) => (
-                    <div key={i} className={`${i === 2 || (i > 2 && (i - 2) % 3 === 0) ? "col-span-2 w-[70%] mx-auto" : ''
+                    <div key={i} className={`${i === 2 || (i > 2 && (i - 2) % 3 === 0) ? "col-span-2 sm:col-span-2 xxs:col-span-1 w-[70%] sm:w-[70%] xxs:w-full mx-auto" : 'xxs:max-sm:col-span-1'
                         } border-b border-solid border-gray-100`}>
                         <Link href={item.url} className="group overflow-hidden block">
                             <Image src={item.image} alt={item.name} width={item.width} height={item.height} className="w-full transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] group-hover:scale-105" />
                             <div className="px-2 py-3">
                                 <p className="text-sm">{item.type}</p>
-                                <h4 className="text-lg font-bold">{item.name}</h4>
+                                <h4 className="text-lg sm:text-lg xxs:text-base font-bold">{item.name}</h4>
                             </div>
                         </Link>
                     </div>

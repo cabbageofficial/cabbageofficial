@@ -17,7 +17,7 @@ const About = () => {
         <section id="about">
             <Marquees />
             <Container className="py-16">
-                <div className="grid grid-cols-2 items-center">
+                <div className="grid grid-cols-2 lg:grid-cols-2 xxs:grid-cols-1 items-center xxs:max-lg:gap-y-16">
                     <div>
                         <h4 className="text-4xl font-bold mb-2">About <span className="text-secondary">Us</span></h4>
                         <p className="text-base">
@@ -41,7 +41,7 @@ const About = () => {
                             <p className="text-base">A agency for developed and Sharing</p>
                             <Socials />
                         </div>
-                        <p className="bg-secondary bg-opacity-20 p-4 rounded-md border border-solid border-secondary border-opacity-30 w-[65%] mx-auto">“The harmony of code and design, the symphony of technology and creativity”</p>
+                        <p className="bg-secondary bg-opacity-20 p-4 rounded-md border border-solid border-secondary border-opacity-30 w-[65%] mx-auto msm:w-[65%] xxs:w-[100%]">“The harmony of code and design, the symphony of technology and creativity”</p>
                     </div>
                 </div>
             </Container>

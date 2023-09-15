@@ -15,16 +15,16 @@ const data = [
 
 const Connect = () => {
     return (
-        <div className="col-span-4">
+        <div className="col-span-4 md:col-span-4 xxs:col-span-1">
             <h4 className="text-xl font-bold">Let&apos;s <span className="text-secondary">Connect</span></h4>
-            <ul className="mt-10">
+            <ul className="mt-10 md:mt-10 xxs:mt-4 xxs:max-md:flex xs:max-md:gap-6 xxs:max-xs:flex-wrap xxs:max-xs:gap-4">
                 {data.map((item, i) => (
                     <li className="my-3.5" key={i}>
                         <Link href={item.url} className="flex gap-2 items-center group w-max">
                             <div className={`flex justify-center items-center w-[30px] h-[30px] rounded-md bg-main text-white transition-all duration-200 ease-[cubic-bezier(0.4, 0, 0.2, 1)] group-hover:bg-secondary`}>
                                 <Icons className="text-lg" icon={item.icon} />
                             </div>
-                            <h4>{item.name}</h4>
+                            <h4 className="xxs:max-md:hidden">{item.name}</h4>
                         </Link>
                     </li>
                 ))}

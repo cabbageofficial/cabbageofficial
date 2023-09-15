@@ -9,7 +9,7 @@ const Faq = () => {
         <section>
             <Container className="py-16">
                 <Header />
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-2 xxs:grid-cols-1 gap-6 md:gap-6 xxs:gap-0">
                     <Left />
                     <Right />
                 </div>

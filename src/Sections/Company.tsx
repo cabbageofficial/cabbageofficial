@@ -23,7 +23,7 @@ const Company = () => {
     return (
         <section>
             <Container className="pb-24 pt-8">
-                <ul className="grid grid-cols-6 gap-x-6 gap-y-12">
+                <ul className="grid grid-cols-6 lsm:grid-cols-6 xxs:grid-cols-3 gap-x-6 gap-y-12">
                     {data.map((item, i) => (
                         <li key={i} className="relative group cursor-pointer select-none">
                             <Image src={item.image} alt={item.name} width={172} height={76} className={`w-[120px] ${(i % 2 === 1 && i < 6) ? "opacity-30" : ""} ${(i % 2 === 0 && i > 5) ? "opacity-30" : ""} mx-auto group-hover:opacity-0 group-hover:invisible`} />

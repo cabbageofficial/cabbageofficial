@@ -12,7 +12,7 @@ const data = [
 
 const Navs = () => {
     return (
-        <div className="col-span-5">
+        <div className="col-span-5 lg:block xxs:hidden">
             <ul className="flex gap-x-4 justify-center">
                 {data.map((item, i) => (
                     <li key={i}>
