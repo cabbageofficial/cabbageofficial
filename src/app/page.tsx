@@ -7,6 +7,7 @@ import Services from "@/Sections/Services";
 import Faq from "@/Sections/Faq";
 import Company from "@/Sections/Company";
 import Introducing from "@/Sections/Introducing";
+import Blog from "@/Sections/Blogs";
 import Footer from "@/Sections/Footer";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Faq />
       <Company />
       <Introducing />
+      <Blog />
       <Footer />
     </div>
   );
