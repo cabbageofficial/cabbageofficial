@@ -2,6 +2,8 @@ import Image from "next/image";
 import moment from "moment";
 import Link from "next/link";
 
+export const revalidate = 60
+
 //Types
 import { MyPostTypes } from "./Types";
 
@@ -17,19 +19,6 @@ async function getMyPosts() {
 const Card = async () => {
     //Calling function
     const blogs: MyPostTypes = await getMyPosts();
-
-    //Handler
-    const extractFirstParagraphText = () => {
-        let firstParagraphText = '';
-        const options = {
-            replace: (node: any) => {
-                if (node.name === 'p' && !firstParagraphText) {
-                    firstParagraphText = node.children[0].data;
-                }
-            },
-        };
-        return firstParagraphText;
-    }
     return (
         <div className="mt-16 grid grid-cols-3 lg:grid-cols-3 lsm:grid-cols-2 xxs:grid-cols-1 gap-5">
             {blogs.items.slice(0, 6).map((item, i) => (
