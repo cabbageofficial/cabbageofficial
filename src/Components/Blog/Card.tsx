@@ -2,14 +2,12 @@ import Image from "next/image";
 import moment from "moment";
 import Link from "next/link";
 
-export const revalidate = 60
-
 //Types
 import { MyPostTypes } from "./Types";
 
 //Fetching function
 async function getMyPosts() {
-    const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@cabbageweb`)
+    const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@cabbageweb`, { next: { revalidate: 300 } })
     if (!res.ok) {
         throw new Error('Failed to fetch data')
     }
