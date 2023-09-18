@@ -1,27 +1,24 @@
 import Image from "next/image";
 import moment from "moment";
 import Link from "next/link";
+import getMediumFeed from "@beskar-labs/medium-feed";
 
-//Types
-import { MyPostTypes } from "./Types";
-
-//Fetching function
-async function getMyPosts() {
-    const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@cabbageweb`, { next: { revalidate: 300 } })
-    if (!res.ok) {
-        throw new Error('Failed to fetch data')
-    }
-    return res.json()
-}
+export const dynamic = "force-dynamic"
 
 const Card = async () => {
-    //Calling function
-    const blogs: MyPostTypes = await getMyPosts();
+    //Getting Medium Feed
+    const blogs = await getMediumFeed({
+        username: "@cabbageweb",
+        url: "https://medium.com/feed/@cabbageweb",
+    });
+
     return (
-        <div className="mt-16 grid grid-cols-3 lg:grid-cols-3 lsm:grid-cols-2 xxs:grid-cols-1 gap-5">
-            {blogs.items.slice(0, 6).map((item, i) => (
+        <div className="mt-16 grid grid-cols-3 lg:grid-cols-3 lsm:grid-cols-2 xxs:grid-cols-1 gap-6">
+            {blogs.map((item, i) => (
                 <div key={i}>
-                    <Image src={item.thumbnail} alt={item.title} width={820} height={462} priority className="w-full rounded-md" />
+                    {item.image &&
+                        <Image src={item.image} alt={item.title} width={820} height={462} priority className="w-full rounded-md" />
+                    }
                     <div className="flex my-1.5">
                         <div className="flex-1 flex gap-x-2 items-center">
                             <span>by</span>
@@ -32,7 +29,7 @@ const Card = async () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12zm11-5a1 1 0 1 0-2 0v3.764a3 3 0 0 0 1.658 2.683l2.895 1.447a1 1 0 1 0 .894-1.788l-2.894-1.448a1 1 0 0 1-.553-.894V7z" clipRule="evenodd" /></svg>
                             </span>
                             <span>
-                                {moment(item.pubDate).format("MMM DD")}
+                                {moment(item.date).format("MMM DD")}
                             </span>
                         </div>
                     </div>
