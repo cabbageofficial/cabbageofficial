@@ -6,8 +6,8 @@ import getMediumFeed from "@beskar-labs/medium-feed";
 const Card = async () => {
     //Getting Medium Feed
     const blogs = await getMediumFeed({
-        username: "@cabbageweb",
-        url: "https://medium.com/feed/@cabbageweb",
+        username: "cabbageweb",
+        url: "https://medium.com/feed/",
     });
 
     return (
