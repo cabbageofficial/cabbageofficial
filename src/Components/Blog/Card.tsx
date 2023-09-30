@@ -3,8 +3,6 @@ import moment from "moment";
 import Link from "next/link";
 import getMediumFeed from "@beskar-labs/medium-feed";
 
-export const dynamic = "force-dynamic"
-
 const Card = async () => {
     //Getting Medium Feed
     const blogs = await getMediumFeed({

@@ -1,3 +1,7 @@
+//Re Validating and Dynamic
+export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
 //Component
 import Header from "@/Sections/Header";
 import Hero from "@/Sections/Hero";
